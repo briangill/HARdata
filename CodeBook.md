@@ -15,23 +15,23 @@ Finally, a Fast Fourier Transform (FFT) was applied to some of these signals pro
 
 This results in the following list of signals, where '.XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcx.XYZ
-tGravityAcc.XYZ
-tBodyAccJerk.XYZ
-tBodyGyro.XYZ
-tBodyGyroJerk.XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc.XYZ
-fBodyAccJerk.XYZ
-fBodyGyro.XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+- tBodyAcx.XYZ
+- tGravityAcc.XYZ
+- tBodyAccJerk.XYZ
+- tBodyGyro.XYZ
+- tBodyGyroJerk.XYZ
+- tBodyAccMag
+- tGravityAccMag
+- tBodyAccJerkMag
+- tBodyGyroMag
+- tBodyGyroJerkMag
+- fBodyAcc.XYZ
+- fBodyAccJerk.XYZ
+- fBodyGyro.XYZ
+- fBodyAccMag
+- fBodyAccJerkMag
+- fBodyGyroMag
+- fBodyGyroJerkMag
 
 For each of these signals, 17 different variables were then computed for each time window.  We will restrict our analysis to two of these variables -- the mean and standard deviation -- for each signal.  All other variables will be dropped.  For each signal, there will then be two variables, one for the mean and one for the standard deviation.  For example, for the fBodyAccMag signal, the two variables will be "fBodyAccMag.mean" for the mean and "fBodyAccMag.std" for the standard deviation.  For 3-axial signals, there will be two variables in each direction (X, Y, and Z).  For example, there are six variables for tBodyAcx.XYZ: "tBodyAcx.mean.X", "tBodyAcx.std.X", "tBodyAcx.mean.Y", "tBodyAcx.std.Y", "tBodyAcx.mean.Z", "tBodyAcx.std.Z".  
 
@@ -67,77 +67,72 @@ As a final step, we compute the average of each variable for each subject and ea
 ##Complete List of Variables in Final Dataset
 The complete list of variables in the final tidy dataset HAR_summary.txt is shown below.  
 
-"subject":        Subject number (1-30 for the 30 subjects) 
-"activity":       Activity type (one of 6 types: WALKING
-, WALKING_UPSTAIRS
-, WALKING_DOWNSTAIRS, SITTING
-, STANDING
-, LAYING
-) 
-"n.observations": Total number of observations for the subject and activity.
-"average.tBodyAcc.mean.X" 
-"average.tBodyAcc.mean.Y" 
-"average.tBodyAcc.mean.Z" 
-"average.tBodyAcc.std.X" 
-"average.tBodyAcc.std.Y" 
-"average.tBodyAcc.std.Z" 
-"average.tGravityAcc.mean.X" 
-"average.tGravityAcc.mean.Y" 
-"average.tGravityAcc.mean.Z" 
-"average.tGravityAcc.std.X" 
-"average.tGravityAcc.std.Y" 
-"average.tGravityAcc.std.Z" 
-"average.tBodyAccJerk.mean.X" 
-"average.tBodyAccJerk.mean.Y" 
-"average.tBodyAccJerk.mean.Z" 
-"average.tBodyAccJerk.std.X" 
-"average.tBodyAccJerk.std.Y" 
-"average.tBodyAccJerk.std.Z" 
-"average.tBodyGyro.mean.X" 
-"average.tBodyGyro.mean.Y" 
-"average.tBodyGyro.mean.Z" 
-"average.tBodyGyro.std.X" 
-"average.tBodyGyro.std.Y" 
-"average.tBodyGyro.std.Z" 
-"average.tBodyGyroJerk.mean.X" 
-"average.tBodyGyroJerk.mean.Y" 
-"average.tBodyGyroJerk.mean.Z" 
-"average.tBodyGyroJerk.std.X" 
-"average.tBodyGyroJerk.std.Y" 
-"average.tBodyGyroJerk.std.Z" 
-"average.tBodyAccMag.mean" 
-"average.tBodyAccMag.std" 
-"average.tGravityAccMag.mean" 
-"average.tGravityAccMag.std" 
-"average.tBodyAccJerkMag.mean" 
-"average.tBodyAccJerkMag.std" 
-"average.tBodyGyroMag.mean" 
-"average.tBodyGyroMag.std" 
-"average.tBodyGyroJerkMag.mean" 
-"average.tBodyGyroJerkMag.std" 
-"average.fBodyAcc.mean.X" 
-"average.fBodyAcc.mean.Y" 
-"average.fBodyAcc.mean.Z" 
-"average.fBodyAcc.std.X" 
-"average.fBodyAcc.std.Y" 
-"average.fBodyAcc.std.Z" 
-"average.fBodyAccJerk.mean.X" 
-"average.fBodyAccJerk.mean.Y" 
-"average.fBodyAccJerk.mean.Z" 
-"average.fBodyAccJerk.std.X" 
-"average.fBodyAccJerk.std.Y" 
-"average.fBodyAccJerk.std.Z" 
-"average.fBodyGyro.mean.X" 
-"average.fBodyGyro.mean.Y" 
-"average.fBodyGyro.mean.Z" 
-"average.fBodyGyro.std.X" 
-"average.fBodyGyro.std.Y" 
-"average.fBodyGyro.std.Z" 
-"average.fBodyAccMag.mean" 
-"average.fBodyAccMag.std" 
-"average.fBodyBodyAccJerkMag.mean" 
-"average.fBodyBodyAccJerkMag.std" 
-"average.fBodyBodyGyroMag.mean" 
-"average.fBodyBodyGyroMag.std" 
-"average.fBodyBodyGyroJerkMag.mean" 
-"average.fBodyBodyGyroJerkMag.std"
+- "subject":        Subject number (1-30 for the 30 subjects) 
+- "activity":       Activity type (one of 6 types: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
+- "n.observations": Total number of observations for the subject and activity.
+- "average.tBodyAcc.mean.X" 
+- "average.tBodyAcc.mean.Y" 
+- "average.tBodyAcc.mean.Z" 
+- "average.tBodyAcc.std.X" 
+- "average.tBodyAcc.std.Y" 
+- "average.tBodyAcc.std.Z" 
+- "average.tGravityAcc.mean.X" 
+- "average.tGravityAcc.mean.Y" 
+- "average.tGravityAcc.mean.Z" 
+- "average.tGravityAcc.std.X" 
+- "average.tGravityAcc.std.Y" 
+- "average.tGravityAcc.std.Z" 
+- "average.tBodyAccJerk.mean.X" 
+- "average.tBodyAccJerk.mean.Y" 
+- "average.tBodyAccJerk.mean.Z" 
+- "average.tBodyAccJerk.std.X" 
+- "average.tBodyAccJerk.std.Y" 
+- "average.tBodyAccJerk.std.Z" 
+- "average.tBodyGyro.mean.X" 
+- "average.tBodyGyro.mean.Y" 
+- "average.tBodyGyro.mean.Z" 
+- "average.tBodyGyro.std.X" 
+- "average.tBodyGyro.std.Y" 
+- "average.tBodyGyro.std.Z" 
+- "average.tBodyGyroJerk.mean.X" 
+- "average.tBodyGyroJerk.mean.Y" 
+- "average.tBodyGyroJerk.mean.Z" 
+- "average.tBodyGyroJerk.std.X" 
+- "average.tBodyGyroJerk.std.Y" 
+- "average.tBodyGyroJerk.std.Z" 
+- "average.tBodyAccMag.mean" 
+- "average.tBodyAccMag.std" 
+- "average.tGravityAccMag.mean" 
+- "average.tGravityAccMag.std" 
+- "average.tBodyAccJerkMag.mean" 
+- "average.tBodyAccJerkMag.std" 
+- "average.tBodyGyroMag.mean" 
+- "average.tBodyGyroMag.std" 
+- "average.tBodyGyroJerkMag.mean" 
+- "average.tBodyGyroJerkMag.std" 
+- "average.fBodyAcc.mean.X" 
+- "average.fBodyAcc.mean.Y" 
+- "average.fBodyAcc.mean.Z" 
+- "average.fBodyAcc.std.X" 
+- "average.fBodyAcc.std.Y" 
+- "average.fBodyAcc.std.Z" 
+- "average.fBodyAccJerk.mean.X" 
+- "average.fBodyAccJerk.mean.Y" 
+- "average.fBodyAccJerk.mean.Z" 
+- "average.fBodyAccJerk.std.X" 
+- "average.fBodyAccJerk.std.Y" 
+- "average.fBodyAccJerk.std.Z" 
+- "average.fBodyGyro.mean.X" 
+- "average.fBodyGyro.mean.Y" 
+- "average.fBodyGyro.mean.Z" 
+- "average.fBodyGyro.std.X" 
+- "average.fBodyGyro.std.Y" 
+- "average.fBodyGyro.std.Z" 
+- "average.fBodyAccMag.mean" 
+- "average.fBodyAccMag.std" 
+- "average.fBodyBodyAccJerkMag.mean" 
+- "average.fBodyBodyAccJerkMag.std" 
+- "average.fBodyBodyGyroMag.mean" 
+- "average.fBodyBodyGyroMag.std" 
+- "average.fBodyBodyGyroJerkMag.mean" 
+- "average.fBodyBodyGyroJerkMag.std"
